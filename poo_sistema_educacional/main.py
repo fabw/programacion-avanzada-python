@@ -67,6 +67,22 @@ class Matricula:
     def cancelar_matricula(self):
         print("La matrícula ha sido cancelada.")
 
+alumno1 = Alumno("Francisco", "Blazquez", "12345678-9", "A001", "Informática")
+profesor1 = Profesor("Carlos", "Pérez", "98765432-1", "P001", "Programación")
+asignatura1 = Asignatura("PGY4121", "Programación Avanzada en Python", 6)
+curso1 = Curso("C001", "001", "Laboratorio 2")
+matricula1 = Matricula("2026-04-01", "Activa")
+
+alumno1.mostrar_datos()
+alumno1.inscribirse_curso()
+
+profesor1.mostrar_datos()
+profesor1.impartir_clase()
+
+asignatura1.mostrar_asignatura()
+curso1.mostrar_curso()
+matricula1.registrar_matricula()
+
 
 
 

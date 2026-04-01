@@ -20,6 +20,9 @@ class Alumno(Persona):
 
     def ver_horario(self):
         print("Mostrando horario del alumno", self.nombre)
+    
+    def presentarse(self):
+        print("El alumno", self.nombre, self.apellido, "pertenece a la carrera de", self.carrera)
 
 class Profesor(Persona):
     def __init__(self, nombre, apellido, rut, id_profesor, especialidad):
@@ -32,6 +35,9 @@ class Profesor(Persona):
 
     def impartir_clase(self):
         print("El profesor", self.nombre, "está impartiendo clase.")
+    
+    def presentarse(self):
+        print("El profesor", self.nombre, self.apellido, "es especialista en", self.especialidad)
 
 class Asignatura:
     def __init__(self, codigo, nombre, horas_semanales):
@@ -43,7 +49,6 @@ class Asignatura:
         print("Código:", self.codigo)
         print("Nombre:", self.nombre)
         print("Horas semanales:", self.horas_semanales)
-
 
 class Curso:
     def __init__(self, codigo_curso, seccion, sala):
@@ -91,7 +96,6 @@ curso1.detalle_curso()
 curso1.detalle_curso("Curso orientado al desarrollo de programación orientada a objetos en Python.")
 matricula1.registrar_matricula()
 
-
-
-
-
+personas = [alumno1, profesor1]
+for persona in personas:
+    persona.presentarse()

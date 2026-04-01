@@ -55,6 +55,12 @@ class Curso:
         print("Código del curso:", self.codigo_curso)
         print("Sección:", self.seccion)
         print("Sala:", self.sala)
+    
+    def detalle_curso(self, informacion=None):
+        if informacion is None:
+            print("Curso sin información adicional.")
+        else:
+            print("Detalle del curso:", informacion)
 
 class Matricula:
     def __init__(self, fecha, estado):
@@ -81,6 +87,8 @@ profesor1.impartir_clase()
 
 asignatura1.mostrar_asignatura()
 curso1.mostrar_curso()
+curso1.detalle_curso()
+curso1.detalle_curso("Curso orientado al desarrollo de programación orientada a objetos en Python.")
 matricula1.registrar_matricula()
 
 

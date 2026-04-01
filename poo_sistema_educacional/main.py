@@ -32,3 +32,42 @@ class Profesor(Persona):
 
     def impartir_clase(self):
         print("El profesor", self.nombre, "está impartiendo clase.")
+
+class Asignatura:
+    def __init__(self, codigo, nombre, horas_semanales):
+        self.codigo = codigo
+        self.nombre = nombre
+        self.horas_semanales = horas_semanales
+
+    def mostrar_asignatura(self):
+        print("Código:", self.codigo)
+        print("Nombre:", self.nombre)
+        print("Horas semanales:", self.horas_semanales)
+
+
+class Curso:
+    def __init__(self, codigo_curso, seccion, sala):
+        self.codigo_curso = codigo_curso
+        self.seccion = seccion
+        self.sala = sala
+
+    def mostrar_curso(self):
+        print("Código del curso:", self.codigo_curso)
+        print("Sección:", self.seccion)
+        print("Sala:", self.sala)
+
+class Matricula:
+    def __init__(self, fecha, estado):
+        self.fecha = fecha
+        self.estado = estado
+
+    def registrar_matricula(self):
+        print("Matrícula registrada en fecha:", self.fecha)
+
+    def cancelar_matricula(self):
+        print("La matrícula ha sido cancelada.")
+
+
+
+
+

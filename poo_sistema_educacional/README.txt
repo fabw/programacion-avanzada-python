@@ -1,2 +1,3 @@
-Actividad sistema educacional
-En esta actividad se implementó en Python un modelo simple de un sistema educacional basado en un diagrama de clases. Se trabajó con clases como Persona, Alumno, Profesor, Asignatura, Curso y Matricula, aplicando herencia, polimorfismo, interacción entre objetos y simulación de sobrecarga de métodos.
+# Sistema educacional en Python
+
+Implementación simple de un modelo de sistema educacional en Python, aplicando clases, herencia, polimorfismo e interacción entre objetos.
